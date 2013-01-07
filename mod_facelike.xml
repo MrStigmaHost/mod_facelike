@@ -1,0 +1,68 @@
+<?xml version="1.1" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site">
+    <name>FaceLike</name>
+    <author>Xtnd.it L.T.D.</author>
+    <creationDate>August 2012</creationDate>
+    <copyright>Copyright (C) 2012 xtnd.it, All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>info@xtnd.it</authorEmail>
+    <authorUrl>http://www.xtnd.it/</authorUrl>
+    <version>1.1</version>
+    <description>An easy way to integrate your facebook account with your Joomla Web Site. An easy to use module, freely available by Xtnd.it Group.</description>
+    <files>
+        <filename module="mod_facelike">mod_facelike.php</filename>
+		<filename>mod_facelike.xml</filename>
+        <filename>index.html</filename>
+        <filename>language/bg-BG/bg-BG.mod_facelike.ini</filename>
+        <filename>language/cs-CZ/cs-CZ.mod_facelike.ini</filename>
+        <filename>language/da-DK/da-DK.mod_facelike.ini</filename>
+        <filename>language/el-GR/el-GR.mod_facelike.ini</filename>
+        <filename>language/en-GB/en-GB.mod_facelike.ini</filename>
+        <filename>language/fr-FR/fr-FR.mod_facelike.ini</filename>
+        <filename>language/it-IT/it-IT.mod_facelike.ini</filename>
+        <filename>language/zh-CN/zh-CN.mod_facelike.ini</filename>
+    </files>
+	<config>
+    	<fields name="params">
+    		<fieldset name="basic">
+                <field name="fb_appid" size="50" type="text" label="MOD_FACELIKE_APP_ID" description="MOD_FACELIKE_APP_ID_DESC" />
+        		<field name="fb_href" size="50" type="text" label="MOD_FACELIKE_URL" description="MOD_FACELIKE_URL_DESC" />
+        		<field name="fb_width" type="text" label="MOD_FACELIKE_WIDTH" default="250" description="MOD_FACELIKE_WIDTH_DESC" />
+        		<field name="fb_height" type="text" default="570" label="MOD_FACELIKE_HEIGHT" description="MOD_FACELIKE_HEIGHT_DESC" />
+        		<field name="fb_border" type="text" default="#333333" label="MOD_FACELIKE_BORDER" description="MOD_FACELIKE_BORDER_DESC" />
+        		<field name="fb_color" type="list" label="MOD_FACELIKE_COLOR" description="MOD_FACELIKE_COLOR_DESC" >
+        			<option value="light">MOD_FACELIKE_COLOR_LIGHT</option>
+        			<option value="dark">MOD_FACELIKE_COLOR_DARK</option>
+        		</field>
+                <field name="fb_doc_version" type="list" label="MOD_FACELIKE_DOCTYPE" default="HTML5" description="MOD_FACELIKE_DOCTYPE_DESC">
+                    <option value="HTML5">MOD_FACELIKE_DOCTYPE_HTML5</option>
+                    <option value="Other">MOD_FACELIKE_DOCTYPE_OTHER</option>
+                </field>
+        		<field name="fb_faces" type="radio" label="MOD_FACELIKE_FACES" default="1" description="MOD_FACELIKE_FACES_DESC" >
+        			<option value="1">MOD_FACELIKE_SHOW</option>
+        			<option value="0">MOD_FACELIKE_HIDE</option>
+        		</field>
+        		<field name="fb_stream" type="radio" label="MOD_FACELIKE_STREAM" default="0" description="MOD_FACELIKE_STREAM_DESC" >
+        			<option value="1">MOD_FACELIKE_YES</option>
+        			<option value="0">MOD_FACELIKE_NO</option>
+        		</field>
+        		<field name="header" type="radio" label="MOD_FACELIKE_HEADER" default="1" description="MOD_FACELIKE_HEADER_DESC" >
+        			<option value="1">MOD_FACELIKE_SHOW</option>
+        			<option value="0">MOD_FACELIKE_HIDE</option>
+        		</field>
+    		</fieldset>
+    	</fields>
+	</config>
+    <administration>
+        <languages folder="language">
+            <language tag="en-GB">en-GB/en-GB.mod_facelike.ini</language>
+            <language tag="el-GR">el-GR/el-GR.mod_facelike.ini</language>
+            <language tag="it-IT">it-IT/it-IT.mod_facelike.ini</language>
+            <language tag="bg-BG">bg-BG/bg-BG.mod_facelike.ini</language>
+            <language tag="zh-CN">zh-CN/zh-CN.mod_facelike.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.mod_facelike.ini</language>
+            <language tag="da-DK">da-DK/da-DK.mod_facelike.ini</language>
+            <language tag="fr-FR">fr-FR/fr-FR.mod_facelike.ini</language>
+        </languages>
+    </administration>
+</extension>
